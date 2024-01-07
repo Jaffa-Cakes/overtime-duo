@@ -15,10 +15,14 @@ pub fn Navbar() -> impl IntoView {
     ];
 
     view! {
-        <div class="sticky top-0 bg-slate-600 flex flex-row justify-center">
-            {items.into_iter()
-                .map(|(name, href)| view! { <Item name={name} href={href} /> })
-                .collect::<Vec<_>>()}
+        <div class="sticky top-0 bg-slate-600 flex flex-row justify-center place-content-center justify-items-center place-items-center">
+            <img src="/images/logo.png" class="mr-20 w-auto h-12" />
+
+            <div class="flex flex-row justify-center">
+                {items.into_iter()
+                    .map(|(name, href)| view! { <Item name={name} href={href} /> })
+                    .collect::<Vec<_>>()}
+            </div>
         </div>
     }
 }
