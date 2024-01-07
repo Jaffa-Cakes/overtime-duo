@@ -1,6 +1,6 @@
 use super::*;
 
 #[component]
-pub fn Index() -> impl IntoView {
+pub fn ContactUs() -> impl IntoView {
     view! {}
 }

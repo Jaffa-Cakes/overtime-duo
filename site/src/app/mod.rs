@@ -31,7 +31,10 @@ pub fn App() -> impl IntoView {
         }>
             <Routes>
                 <Route path="/" view=pages::IndexLayout>
-                    <Route path="/another-page" view=pages::index_layout::AnotherPage />
+                    <Route path="/about-us" view=pages::index_layout::AboutUs />
+                    <Route path="/contact-us" view=pages::index_layout::ContactUs />
+                    <Route path="/gig-guide" view=pages::index_layout::GigGuide />
+                    <Route path="/venues" view=pages::index_layout::Venues />
                     <Route path="" view=pages::index_layout::Index />
                 </Route>
             </Routes>
