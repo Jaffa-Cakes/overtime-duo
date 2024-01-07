@@ -15,7 +15,7 @@ pub use venues::Venues;
 #[component]
 pub fn IndexLayout() -> impl IntoView {
     view! {
-        <div class="min-h-screen">
+        <div class="min-h-screen flex flex-col justify-between">
             <components::Navbar />
 
             <Outlet />
