@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    @apply overflow-y-scroll;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-item {
     @apply text-white px-2 py-1 rounded m-3;
+}
+
+.page-block {
+    @apply rounded-lg p-4 bg-black text-white my-8;
 }

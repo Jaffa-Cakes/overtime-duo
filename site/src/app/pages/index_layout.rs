@@ -15,10 +15,14 @@ pub use venues::Venues;
 #[component]
 pub fn IndexLayout() -> impl IntoView {
     view! {
-        <div class="min-h-screen flex flex-col justify-between">
+        <div class="min-h-screen flex flex-col justify-between bg-slate-800">
             <components::Navbar />
 
-            <Outlet />
+            <div class="flex flex-row justify-center">
+                <div class="max-w-6xl w-full">
+                    <Outlet />
+                </div>
+            </div>
 
             <components::Footer />
         </div>

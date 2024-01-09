@@ -2,5 +2,7 @@ use super::*;
 
 #[component]
 pub fn AboutUs() -> impl IntoView {
-    view! {}
+    view! {
+        <components::AboutUs />
+    }
 }

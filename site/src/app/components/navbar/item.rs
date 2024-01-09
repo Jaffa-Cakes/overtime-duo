@@ -16,9 +16,9 @@ pub fn Item(#[prop(into)] name: String, #[prop(into)] href: String) -> impl Into
 
     let styles = move || {
         if active.get() {
-            "nav-item bg-slate-700"
+            "nav-item bg-slate-800"
         } else {
-            "nav-item bg-slate-600 hover:bg-slate-700"
+            "nav-item bg-slate-700 hover:bg-slate-800"
         }
     };
 
